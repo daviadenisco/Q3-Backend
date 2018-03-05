@@ -1,18 +1,23 @@
-var express = require('express');
-var path = require('path');
-var favicon = require('serve-favicon');
-var logger = require('morgan');
-var cookieParser = require('cookie-parser');
-var bodyParser = require('body-parser');
+const express = require('express');
+const app = express();
+const logger = require('morgan');
+const bodyParser = require('body-parser');
+const knex = require('./db');
+const PORT = process.env.PORT || 8082;
 
-var index = require('./routes/index');
-var users = require('./routes/users');
+const path = require('path');
+const favicon = require('serve-favicon');
+const cookieParser = require('cookie-parser');
 
-var app = express();
+// load routes
+// const index = require('./routes/index');
+const routes = require('./routes/studentInfoTableRoutes');
 
-// view engine setup
-app.set('views', path.join(__dirname, 'views'));
-app.set('view engine', 'ejs');
+
+// middleware
+app.use(logger('combined'));
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({extended: true}));
 
 // uncomment after placing your favicon in /public
 //app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
@@ -22,8 +27,12 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.use('/', index);
-app.use('/users', users);
+// app.use('/', index);
+app.use('/', routes);
+
+// view engine setup
+app.set('views', path.join(__dirname, 'views'));
+app.set('view engine', 'ejs');
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
@@ -42,5 +51,12 @@ app.use(function(err, req, res, next) {
   res.status(err.status || 500);
   res.render('error');
 });
+
+// Listening
+// takes two arguments, the PORT variable and an anonymous function
+
+app.listen( PORT, () => {
+  console.log(`Listening on http://localhost:${PORT}`);
+})
 
 module.exports = app;
