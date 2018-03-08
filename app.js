@@ -3,6 +3,7 @@ const app = express();
 const logger = require('morgan');
 const bodyParser = require('body-parser');
 const knex = require('./db');
+const cors = require('cors')
 const PORT = process.env.PORT || 8082;
 
 const path = require('path');
@@ -34,6 +35,8 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 // app.use('/', index);
 app.use('/', routes);
+
+app.use(cors())
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
