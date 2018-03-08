@@ -59,9 +59,9 @@ app.use(function(err, req, res, next) {
 
 // Listening
 // takes two arguments, the PORT variable and an anonymous function
-
-app.listen(process.env.PORT || PORT, () => {
-  console.log(`Listening on http://localhost:${PORT}`);
-})
+//
+// app.listen(process.env.PORT || PORT, () => {
+//   console.log(`Listening on http://localhost:${PORT}`);
+// })
 
 module.exports = app;
