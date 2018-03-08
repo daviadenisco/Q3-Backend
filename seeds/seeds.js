@@ -1,8 +1,8 @@
 exports.seed = function(knex, Promise) {
   // Deletes ALL existing entries
-  return knex('studentInfoTable').del().then(function() {
+  return knex('student_info_table').del().then(function() {
     // Inserts seed entries
-    return knex('studentInfoTable').insert([
+    return knex('student_info_table').insert([
       {
         id: 1,
         headshot: 'https://i.imgur.com/gzuG5IP.jpg',
