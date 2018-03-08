@@ -19,7 +19,7 @@ exports.seed = function(knex, Promise) {
         fullName: 'David Nyman',
         gitHub: 'https://github.com/davidnymanmusic',
         linkedIn: 'https://www.linkedin.com/in/david-nyman-a65a8a17/',
-        email: 'davenyman@gmail.com',
+        email: 'mailto:davenyman@gmail.com',
         professionalSite: '',
         capstoneLink: '',
         capstoneDesc: "For my capstone project, I made the most useful app the world will ever know. It's the most convenient and the best designed app ever. Not only is it free to download, your bank account will be credited $1 every time you open the app."
@@ -29,7 +29,7 @@ exports.seed = function(knex, Promise) {
         fullName: 'Don Tamayo',
         gitHub: 'https://github.com/webbydon29',
         linkedIn: 'https://www.linkedin.com/in/don-tamayo-2b0204132/',
-        email: 'amazingmardon@gmail.com',
+        email: 'mailto:amazingmardon@gmail.com',
         professionalSite: '',
         capstoneLink: '',
         capstoneDesc: "For my capstone project, I made the most useful app the world will ever know. It's the most convenient and the best designed app ever. Not only is it free to download, your bank account will be credited $1 every time you open the app."
@@ -39,7 +39,7 @@ exports.seed = function(knex, Promise) {
         fullName: 'Gonpo Lama',
         gitHub: 'https://github.com/gonpolama',
         linkedIn: 'https://www.linkedin.com/in/gonpo-lama-68b0a840/',
-        email: 'gonpolama@gmail.com',
+        email: 'mailto:gonpolama@gmail.com',
         professionalSite: '',
         capstoneLink: '',
         capstoneDesc: "For my capstone project, I made the most useful app the world will ever know. It's the most convenient and the best designed app ever. Not only is it free to download, your bank account will be credited $1 every time you open the app."
@@ -49,7 +49,7 @@ exports.seed = function(knex, Promise) {
         fullName: 'Jon Aquarone',
         gitHub: 'https://github.com/Jontronics',
         linkedIn: 'https://www.linkedin.com/in/jonathan-aquarone-73085189/',
-        email: 'j.aquarone@gmail.com',
+        email: 'mailto:j.aquarone@gmail.com',
         professionalSite: '',
         capstoneLink: '',
         capstoneDesc: "For my capstone project, I made the most useful app the world will ever know. It's the most convenient and the best designed app ever. Not only is it free to download, your bank account will be credited $1 every time you open the app."
@@ -59,7 +59,7 @@ exports.seed = function(knex, Promise) {
         fullName: 'Kyle Treman',
         gitHub: 'https://github.com/jkyletreman',
         linkedIn: 'https://www.linkedin.com/in/jkyletreman/',
-        email: 'jkt290@nyu.edu',
+        email: 'mailto:jkt290@nyu.edu',
         professionalSite: '',
         capstoneLink: '',
         capstoneDesc: "For my capstone project, I made the most useful app the world will ever know. It's the most convenient and the best designed app ever. Not only is it free to download, your bank account will be credited $1 every time you open the app."
@@ -69,7 +69,7 @@ exports.seed = function(knex, Promise) {
         fullName: 'Mike Allen',
         gitHub: 'https://github.com/mikevocalz',
         linkedIn: 'https://www.linkedin.com/in/michael-allen-3b538429/',
-        email: 'mikevocalz@aol.com',
+        email: 'mailto:mikevocalz@aol.com',
         professionalSite: '',
         capstoneLink: '',
         capstoneDesc: "For my capstone project, I made the most useful app the world will ever know. It's the most convenient and the best designed app ever. Not only is it free to download, your bank account will be credited $1 every time you open the app."
@@ -79,7 +79,7 @@ exports.seed = function(knex, Promise) {
         fullName: 'Mona Temchin',
         gitHub: 'https://github.com/MonaTem',
         linkedIn: 'https://www.linkedin.com/in/monatemchin/',
-        email: 'monatemchin@gmail.com',
+        email: 'mailto:monatemchin@gmail.com',
         professionalSite: '',
         capstoneLink: '',
         capstoneDesc: "For my capstone project, I made the most useful app the world will ever know. It's the most convenient and the best designed app ever. Not only is it free to download, your bank account will be credited $1 every time you open the app."
@@ -89,7 +89,7 @@ exports.seed = function(knex, Promise) {
         fullName: 'Riley Green',
         gitHub: 'https://github.com/rgreenviiiv',
         linkedIn: 'https://www.linkedin.com/in/riley-green-aaaa2463/',
-        email: 'rileygreenviiiv@gmail.com',
+        email: 'mailto:rileygreenviiiv@gmail.com',
         professionalSite: '',
         capstoneLink: '',
         capstoneDesc: "For my capstone project, I made the most useful app the world will ever know. It's the most convenient and the best designed app ever. Not only is it free to download, your bank account will be credited $1 every time you open the app."
