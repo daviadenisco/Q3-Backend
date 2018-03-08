@@ -60,7 +60,7 @@ app.use(function(err, req, res, next) {
 // Listening
 // takes two arguments, the PORT variable and an anonymous function
 
-app.listen( PORT, () => {
+app.listen(process.env.PORT || PORT, () => {
   console.log(`Listening on http://localhost:${PORT}`);
 })
 
