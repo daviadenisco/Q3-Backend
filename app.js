@@ -57,11 +57,4 @@ app.use(function(err, req, res, next) {
   res.render('error');
 });
 
-// Listening
-// takes two arguments, the PORT variable and an anonymous function
-//
-// app.listen(process.env.PORT || PORT, () => {
-//   console.log(`Listening on http://localhost:${PORT}`);
-// })
-
 module.exports = app;
