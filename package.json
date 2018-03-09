@@ -3,7 +3,8 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "nodemon ./bin/www server.js"
+    "start": "nodemon ./bin/www server.js",
+    "postinstall": "knex migrate:latest && knex seed:run"
   },
   "dependencies": {
     "body-parser": "^1.18.2",
